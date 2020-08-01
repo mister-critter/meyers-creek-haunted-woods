@@ -50,6 +50,57 @@
                 <p class="lead">
                     <!--Opens September 29th; Continues -->Fridays &amp; Saturdays in October<br>
                     <strong>Open 6:30PM &ndash; 11PM &bull; Gate closes at 11pm</strong></p>
+
+
+
+                <!-- Countdown -->
+                <div class="countdown">
+                    <p>
+                        Next year begins in:
+                    </p>
+                    <div class="countdown-container" id="main-example">
+                        <div class="time weeks flip">
+                            <span class="count curr top">00</span>
+                            <span class="count next top">21</span>
+                            <span class="count next bottom">21</span>
+                            <span class="count curr bottom">00</span>
+                            <span class="label">weeks</span>
+                        </div>
+
+                        <div class="time days flip">
+                            <span class="count curr top">00</span>
+                            <span class="count next top">05</span>
+                            <span class="count next bottom">05</span>
+                            <span class="count curr bottom">00</span>
+                            <span class="label">days</span>
+                        </div>
+
+                        <div class="time hours flip">
+                            <span class="count curr top">00</span>
+                            <span class="count next top">16</span>
+                            <span class="count next bottom">16</span>
+                            <span class="count curr bottom">00</span>
+                            <span class="label">hours</span>
+                        </div>
+
+                        <div class="time minutes flip">
+                            <span class="count curr top">00</span>
+                            <span class="count next top">35</span>
+                            <span class="count next bottom">35</span>
+                            <span class="count curr bottom">00</span>
+                            <span class="label">min</span>
+                        </div>
+
+                        <div class="time seconds flip">
+                            <span class="count curr top">05</span>
+                            <span class="count next top">04</span>
+                            <span class="count next bottom">04</span>
+                            <span class="count curr bottom">05</span>
+                            <span class="label">sec</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="col-md-5"> &nbsp;
             </div>
@@ -352,29 +403,14 @@
     <script src="Carousel%20Template%20for%20Bootstrap_files/jquery.js"></script>
     <script src="Carousel%20Template%20for%20Bootstrap_files/bootstrap.js"></script>
     <script src="Carousel%20Template%20for%20Bootstrap_files/docs.js"></script>
-    <div data-original-title="Copy to clipboard" title=""
-        style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;"
-        class="global-zeroclipboard-container" id="global-zeroclipboard-html-bridge">
-        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge"
-            height="100%" width="100%">
-            <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1408714032767">
-            <param name="allowScriptAccess" value="sameDomain">
-            <param name="scale" value="exactfit">
-            <param name="loop" value="false">
-            <param name="menu" value="false">
-            <param name="quality" value="best">
-            <param name="bgcolor" value="#ffffff">
-            <param name="wmode" value="transparent">
-            <param name="flashvars"
-                value="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com">
-            <embed src="Carousel%20Template%20for%20Bootstrap_files/ZeroClipboard.swf" loop="false" menu="false"
-                quality="best" bgcolor="#ffffff" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain"
-                allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent"
-                pluginspage="https://www.macromedia.com/go/getflashplayer"
-                flashvars="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com"
-                scale="exactfit" height="100%" width="100%">
-        </object>
-    </div>
+    <script type="text/javascript">
+        $("#countdown")
+            .countdown("2017/01/01", function (event) {
+                $(this).text(
+                    event.strftime('%D days %H:%M:%S')
+                );
+            });
+    </script>
 </body>
 
 </html>
