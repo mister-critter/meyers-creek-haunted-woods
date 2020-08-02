@@ -21,6 +21,12 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+@media screen and (max-width: 700px) {
+    body {
+        background-image: none;
+    }
+}
+
 a img,
 img a {
     border: 0;
@@ -62,10 +68,22 @@ section {
     display: flex;
 }
 
+@media screen and (max-width: 700px) {
+    section {
+        flex-wrap: wrap;
+    }
+}
+
 article {
     flex: 1;
     padding: 2rem;
     box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+    article {
+        flex: 1 0 100%;
+    }
 }
 
 .text-red {
@@ -88,12 +106,33 @@ article.col1-3 {
     flex: 0 0 33%;
 }
 
+@media screen and (max-width: 700px) {
+
+    article.col1-2,
+    article.col2-3,
+    article.col1-3 {
+        flex: 1 0 100%;
+    }
+}
+
 .mtop20 {
     margin-top: 2rem;
 }
 
 .align-center {
     align-self: center;
+}
+
+@media screen and (max-width: 700px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hide-desktop {
+        display: none;
+    }
 }
 
 /* HEADER */
@@ -109,6 +148,12 @@ article.col1-3 {
     margin: 2rem auto;
 }
 
+@media screen and (max-width: 700px) {
+    #countdown {
+        font-size: 2rem;
+    }
+}
+
 #countdown p {
     margin: 0;
 }
@@ -117,6 +162,12 @@ article.col1-3 {
 
 .slider div {
     text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .slider div {
+        width: 100% !important;
+    }
 }
 
 /* TICKET PRICES */
