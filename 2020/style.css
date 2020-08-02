@@ -1,3 +1,5 @@
+/* GLOBALS */
+
 * {
     padding: 0;
     margin: 0;
@@ -30,14 +32,16 @@ p {
 main {
     width: 120rem;
     margin: 0 auto;
-    display: flex;
 }
 
 section {
+    display: flex;
+}
+
+article {
     flex: 1;
     padding: 2rem;
     box-sizing: border-box;
-    border: 1px solid #FFF;
 }
 
 .text-red {
@@ -48,14 +52,22 @@ section {
     text-align: center;
 }
 
-section.col1-2 {
+article.col1-2 {
     flex: 0 0 50%;
 }
 
-section.col2-3 {
+article.col2-3 {
     flex: 0 0 66%;
 }
 
-section.col1-3 {
+article.col1-3 {
     flex: 0 0 33%;
+}
+
+/* HEADER */
+
+#countdown {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F00;
 }
