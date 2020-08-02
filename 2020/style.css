@@ -21,6 +21,18 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+a img,
+img a {
+    border: 0;
+}
+
+h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+}
+
 img {
     max-width: 100%;
 }
@@ -29,8 +41,20 @@ p {
     margin-bottom: 1rem;
 }
 
+button {
+    background: #ff0000;
+    color: #FFF;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 main {
     width: 120rem;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -64,10 +88,60 @@ article.col1-3 {
     flex: 0 0 33%;
 }
 
+.mtop20 {
+    margin-top: 2rem;
+}
+
+.align-center {
+    align-self: center;
+}
+
 /* HEADER */
 
 #countdown {
     font-size: 20px;
     font-weight: bold;
     color: #F00;
+}
+
+/* TICKET PRICES */
+.price {
+    width: 100%;
+    display: flex;
+}
+
+.price p {
+    margin-bottom: 0;
+}
+
+.price .ellipsis {
+    border-bottom: dotted 2px #999;
+    flex: 1;
+    margin: .75rem 1rem;
+}
+
+/* CALENDAR */
+.calendar {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #999;
+    margin-bottom: 2rem;
+}
+
+.calendar td {
+    border: 1px solid #999;
+}
+
+.calendar .dayopen {
+    background: #ff0000;
+    color: #fff;
+}
+
+/* RULES */
+ul.rules {
+    padding: 0 2rem;
+}
+
+ul.rules li {
+    margin-bottom: 1rem;
 }

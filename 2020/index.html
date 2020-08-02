@@ -45,13 +45,97 @@
         <!-- Slideshow / Calendar -->
         <section>
 
-            <article>
+            <article class="col2-3 align-center">
                 <!-- Slideshow -->
-
+                <div class="slider">
+                    <div>I am a slide.</div>
+                    <div>I am another slide.</div>
+                </div>
             </article>
 
             <article>
+                <!-- Ticket Prices & Calendar -->
+                <h2>Tickets</h2>
+                <div class="price">
+                    <p>Adult</p>
+                    <p class="ellipsis"></p>
+                    <p>$20</p>
+                </div>
+                <div class="price">
+                    <p>Youth Under 10</p>
+                    <p class="ellipsis"></p>
+                    <p>$10</p>
+                </div>
+
+
                 <!-- Calendar -->
+                <h2 class="mtop20">Calendar</h2>
+                <p class="text-center" style="font-size: 2rem;"><strong>October 2020</strong></p>
+                <table class="calendar">
+                    <tbody>
+                        <tr class="days">
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>1</td>
+                            <td class="dayopen">2</td>
+                            <td class="dayopen">3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td class="dayopen">9</td>
+                            <td class="dayopen">10</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td class="dayopen">16</td>
+                            <td class="dayopen">17</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td class="dayopen">23</td>
+                            <td class="dayopen">24</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td class="dayopen">30</td>
+                            <td class="dayopen">31</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="text-center">
+                    <a href="apply.html">
+                        <button class="application">Employee Application</button>
+                    </a>
+                </p>
+
             </article>
 
         </section>
@@ -60,18 +144,57 @@
         <section>
 
             <article>
-                <!-- Tickets -->
-
+                <!-- Tickets & T-Shirt -->
+                <h2>Buy Tickets Online</h2>
+                <p class="text-center">
+                    <strong>WHEN BUYING TICKETS ONLINE:</strong><br />
+                    Please print your receipt after paying and present to the ticket taker to enter.
+                </p>
+                <p class="text-center">
+                    <a href="https://meyerscreekhauntedwoods.ticketleap.com/">
+                        <button>CLICK HERE TO GET TICKETS</button>
+                    </a>
+                </p>
+                <p class="mtop20">
+                    <a
+                        href="https://www.redbubble.com/people/meyerscreek/works/28315775-meyers-creek-haunted-woods-official-t-shirt?asc=t&p=t-shirt">
+                        <img src="images/shirt-sellsheet-3.jpg" />
+                    </a>
+                </p>
             </article>
 
             <article>
                 <!-- Map -->
-
+                <h2>How To Get Here</h2>
+                <p>Continue Southeast on John Bragg Hwy just past the Double Springs Rd sign, and find us on the right.
+                </p>
+                <p>
+                    <a
+                        href="https://www.google.com/maps/place/4734+John+Bragg+Hwy,+Murfreesboro,+TN+37127/@35.8308413,-86.3314057,17z/data=%213m1%214b1%214m2%213m1%211s0x8863ff315da7a705:0x94ec440ca627e90d">
+                        <img src="images/map.jpg" />
+                    </a>
+                </p>
             </article>
 
             <article>
-                <!-- Rules -->
+                <!-- Rules & Facebook Link -->
+                <h2>Rules</h2>
+                <ul class="rules">
+                    <li>No firearms or weapons allowed.</li>
+                    <li>All persons and belongings are subject to search.</li>
+                    <li>No food, drink, alcohol or drugs.</li>
+                    <li>No flip-flops or open-toed shoes.</li>
+                    <li>Children under 10 must be accompanied by an adult.</li>
+                    <li>Security Check Point for all guests.</li>
+                    <li>Public Intoxication is not tolerated.</li>
+                    <li>Enter at your own risk!</li>
+                </ul>
 
+                <p class="text-center">
+                    <a href="https://www.facebook.com/MeyersCreekHauntedWoods">
+                        <img src="images/facebook.jpg" style="width: 200px;" />
+                    </a>
+                </p>
             </article>
 
         </section>
@@ -79,8 +202,12 @@
     </main>
 
 
+    <!-- jQuery 3.5.1 CDN-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+
+    <!-- Countdown Script -->
     <script src="/jquery.countdown.min.js"></script>
     <script type="text/javascript">
         $("#countdown")
@@ -90,6 +217,29 @@
                 );
             });
     </script>
+
+
+    <!-- bxslider jQuery Slideshow -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                mode: 'fade',
+                pager: false,
+                controls: false,
+                auto: true,
+                pause: 4000,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+
+
+
+
 </body>
 
 </html>
