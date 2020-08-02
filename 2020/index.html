@@ -26,14 +26,15 @@
 
             <article class="col2-3 text-center">
                 <img src="images/logos/logo.png" />
+
+                <div id="countdown">
+                    <p>Opening in <span id="countdown-timer"></span></p>
+                </div>
+
                 <p class="text-red"><strong>4734 John Bragg Hwy, Murfreesboro TN</strong></p>
 
                 <p> Fridays & Saturdays in October<br />
                     <strong>Open 6:30PM – 11PM &bull; Gate closes at 11pm</strong></p>
-
-                <p style="margin: 0;">Opening in</p>
-                <div id="countdown"></div>
-
             </article>
 
             <article>
@@ -48,8 +49,33 @@
             <article class="col2-3 align-center">
                 <!-- Slideshow -->
                 <div class="slider">
-                    <div>I am a slide.</div>
-                    <div>I am another slide.</div>
+                    <div>
+                        <img src="images/photos/image4.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="images/photos/image3.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="images/photos/image2.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="images/photos/image1.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="images/photos/2015-photos/796665710_Dark-Forest-Wallpaper-3.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="images/photos/2015-photos/af92a5f7d92679bbdfc5573252dc18a1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="images/photos/2015-photos/e41d50333713c6cf37bfe797533c1976.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="images/photos/2015-photos/IMG_6094_5_6_7.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="images/photos/2015-photos/original.png" alt="">
+                    </div>
                 </div>
             </article>
 
@@ -210,7 +236,7 @@
     <!-- Countdown Script -->
     <script src="/jquery.countdown.min.js"></script>
     <script type="text/javascript">
-        $("#countdown")
+        $("#countdown-timer")
             .countdown("2020/10/02 06:30:00", function (event) {
                 $(this).text(
                     event.strftime('%Dd %Hh %Mm %Ss')
@@ -220,7 +246,6 @@
 
 
     <!-- bxslider jQuery Slideshow -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 

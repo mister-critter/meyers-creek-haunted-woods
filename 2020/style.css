@@ -99,9 +99,24 @@ article.col1-3 {
 /* HEADER */
 
 #countdown {
-    font-size: 20px;
+    font-size: 3rem;
     font-weight: bold;
-    color: #F00;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    color: #FFF;
+    margin: 2rem auto;
+}
+
+#countdown p {
+    margin: 0;
+}
+
+/* SLIDER */
+
+.slider div {
+    text-align: center;
 }
 
 /* TICKET PRICES */
