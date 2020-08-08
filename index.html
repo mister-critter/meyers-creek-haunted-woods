@@ -19,6 +19,18 @@
 
 <body>
 
+    <!-- 10-Year Gallery Modal-->
+    <div id="gallery-modal">
+        <div id="close-gallery">
+            <div id="mdiv">
+                <div class="mdiv">
+                    <div class="md"></div>
+                </div>
+            </div>
+        </div>
+        <div id="juicebox-container"></div>
+    </div>
+
     <main>
 
         <!-- Header -->
@@ -77,6 +89,10 @@
                         <img src="images/photos/2015-photos/original.png" alt="">
                     </div>
                 </div>
+
+                <p class="text-center">
+                    <button id="gallery-toggle" class="application">10-Year Gallery</button>
+                </p>
 
             </article>
 
@@ -258,6 +274,32 @@
                 pause: 4000,
                 adaptiveHeight: true
             });
+        });
+    </script>
+
+    <!-- 10-Year Gallery -->
+    <script src="/juicebox/jbcore/juicebox.js"></script>
+    <script>
+        new juicebox({
+            baseUrl: "/juicebox/",
+            containerId: 'juicebox-container',
+            autoPlayOnLoad: true
+        });
+        // $("#gallery-toggle").click(function () {
+        //     $("#gallery-modal").fadeToggle();
+        // });
+        // $("#close-gallery").click(function () {
+        //     $("#gallery-modal").fadeToggle();
+        // });
+
+        document.querySelector('#gallery-toggle').addEventListener('click', () => {
+            event.preventDefault;
+            document.querySelector('#gallery-modal').classList.add('visible');
+        });
+
+        document.querySelector('#close-gallery').addEventListener('click', () => {
+            event.preventDefault;
+            document.querySelector('#gallery-modal').classList.remove('visible');
         });
     </script>
 
