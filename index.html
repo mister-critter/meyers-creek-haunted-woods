@@ -19,6 +19,43 @@
 
 <body>
 
+    <!-- COVID Modal -->
+    <div id="modal-wrapper">
+        <div id="modal">
+            <p id="modal-close">X</p>
+            <p>What are we doing to protect our employees?</p>
+            <ul>
+                <li>We are providing employees with Sanitation Stations throughout their work environment.</li>
+                <li>We are providing masks for employees to wear while working.</li>
+                <li>We are sanitizing all work areas throughout the night.</li>
+                <li>We are practicing social distancing with our staff as much as possible.</li>
+                <li>Every employee is required to answer a series of questions provided by the CDC and have their
+                    temperature checked prior to entering the facility. If they answer yes to any of these questions
+                    or have a temperature of 100.4 degrees or higher they will not be allowed to work.&nbsp;</li>
+            </ul>
+            <p>What can guests do to protect themselves?</p>
+            <ul>
+                <li>If possible, please take the temperatures of everyone in your party before arriving at the
+                    facility to make sure they are below 100.4 degrees.</li>
+                <li>We are recommending all guests to wear face masks when at the haunt.</li>
+                <li>Please use the hand sanitizing stations throughout the facility as needed.</li>
+                <li>Please be aware of markers and the parties in front of and around you to maintain social
+                    distancing when at the haunt and in the parking lot.</li>
+                <li>It is your responsibility to maintain social distancing while visiting the haunt.</li>
+            </ul>
+            <h3>COVID &ndash; 19 WARNING</h3>
+            <p>We have taken enhanced health and safety measures for you, our other Guests and Cast Members. You
+                must follow all posted instructions while visiting Meyers Creek Haunted Woods.</p>
+            <p>An inherent risk of exposure to COVID-19 exists in any public place where people are present.
+                COVID-19 is an extremely contagious disease that can lead to severe illness and death. According to
+                the Centers for Disease Control and Prevention, senior citizens and guest with underlying medical
+                conditions are especially vulnerable.</p>
+            <p>By visiting Meyers Creek Haunted Woods, you voluntarily assume all risks related to exposure to
+                COVID-19.</p>
+            <p>Help keep each other healthy.</p>
+        </div>
+    </div>
+
     <!-- 10-Year Gallery Modal-->
     <div id="gallery-modal">
         <div id="close-gallery">
@@ -29,6 +66,11 @@
             </div>
         </div>
         <div id="juicebox-container"></div>
+    </div>
+
+    <!-- COVID Alert -->
+    <div id="alert">
+        PLEASE READ THIS ANNOUNCEMENT REGARDING COVID-19
     </div>
 
     <main>
@@ -248,6 +290,16 @@
     <!-- jQuery 3.5.1 CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
+
+    <!-- Modal Open/Close -->
+    <script>
+        $("#alert").click(function () {
+            $("#modal-wrapper").fadeToggle();
+        });
+        $("#modal-close").click(function () {
+            $("#modal-wrapper").fadeToggle();
+        });
+    </script>
 
     <!-- Countdown Script -->
     <script src="/jquery.countdown.min.js"></script>
